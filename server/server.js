@@ -18,7 +18,7 @@ const requestListener = (req, res) => {
 
 const setCookies = (res) => {
 	res.writeHead(302, {
-		"Set-Cookie": ["myCoolCookie=foo;SameSite=None;secure=true"],
+		"Set-Cookie": ["myCoolCookie=foo;SameSite=None;Secure"],
 		"Location": "/readCookies"
 	});
 	res.end()
